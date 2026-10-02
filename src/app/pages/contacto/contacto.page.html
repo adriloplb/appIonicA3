@@ -1,0 +1,20 @@
+<ion-content>
+  <ion-item>
+    <ion-input [(ngModel)]="correo" placeholder="Correo"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-textarea [(ngModel)]="mensaje" placeholder="Mensaje"></ion-textarea>
+  </ion-item>
+
+  <ion-button (click)="enviar()">
+    Enviar
+  </ion-button>
+
+  <p *ngIf="enviado" style="padding: 16px; color: green;">
+    ¡Mensaje guardado localmente con éxito!
+  </p>
+</ion-content>
+
+
+
